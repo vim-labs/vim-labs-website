@@ -26,6 +26,11 @@ body {
   padding-top: 0 !important;
 }
 
+p,
+h4 {
+  font-size: 1.1rem;
+}
+
 header small {
   font-size: 1rem !important;
   color: rgba(0, 0, 0, 0.67);
@@ -41,17 +46,14 @@ header h4 {
 }
 
 header > h1,
-article {
+article,
+header .header-date {
   font-family: "Merriweather";
 }
 
-article {
-  font-size: 21px;
-}
-
 header > h1 {
-  font-size: 2.5rem !important;
-  margin-bottom: 0 !important;
+  font-size: 2.3rem !important;
+  margin-bottom: 0.5rem !important;
   line-height: 40px !important;
 }
 
@@ -64,7 +66,7 @@ header > h1 {
 }
 
 .footer.footer--dark {
-  background-color: #202022 !important;
+  background-color: #181820 !important;
 }
 
 .footer a:hover {
