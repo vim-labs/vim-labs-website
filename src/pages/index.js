@@ -12,8 +12,8 @@ const features = [
     imageUrl: "img/abstract_1.svg",
     description: (
       <>
-        The first sparks form at a simple concept, an exciting conversation, and
-        a shared vision.
+        The first sparks emerge from a simple concept, an exciting conversation,
+        and a shared vision.
       </>
     )
   },
@@ -22,7 +22,7 @@ const features = [
     imageUrl: "img/abstract_2.svg",
     description: (
       <>
-        From a humble draft, forms begin to take shape as an iterative process
+        From a humble draft, form begin to take shape as an iterative process
         transforms good into great.
       </>
     )
@@ -32,7 +32,7 @@ const features = [
     imageUrl: "img/abstract_3.svg",
     description: (
       <>
-        Community involvement and experimentation leads to new discoveries and
+        Community involvement and collaboration leads to new discoveries and
         opportunities.
       </>
     )
@@ -71,8 +71,9 @@ function Home() {
               <h1>Creative Exploration</h1>
               <h2 style={{ fontWeight: 300 }}>
                 We are a design studio / technology laboratory in Las Vegas, NV,
-                developing bold new prototypes and exploring wild &amp; crazy
-                ideas that might just work.
+                developing <span style={{ fontWeight: 600 }}>bold</span> new
+                prototypes and exploring <em>wild &amp; crazy</em> ideas that
+                might just work.
               </h2>
               <div className="row" style={{ marginTop: "80px" }}>
                 {features.map((props, idx) => (
