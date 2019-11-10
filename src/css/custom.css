@@ -4,7 +4,8 @@
   --ifm-navbar-background-color: transparent !important;
   --ifm-navbar-light-scroll-background-color: rgb(255, 255, 255);
   --ifm-navbar-dark-scroll-background-color: rgb(30, 30, 32);
-  --ifm-h3-font-size: 1.5rem;
+  --ifm-h2-font-size: 1.4rem;
+  --ifm-h3-font-size: 1.3rem;
   --ifm-heading-line-height: 140%;
   --ifm-heading-margin-bottom: 0.45rem;
 }
@@ -41,7 +42,7 @@ main .container {
 
 h4,
 p {
-  font-size: 1.2rem;
+  font-size: 1.1em;
 }
 
 header small {

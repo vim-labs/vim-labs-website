@@ -69,13 +69,16 @@ function Home() {
           <section className={styles.features}>
             <div className="container">
               <h1>Creative Exploration</h1>
-              <h2 style={{ fontWeight: 300 }}>
+              <h3 style={{ fontWeight: 300 }}>
                 We are a design studio / technology laboratory in Las Vegas, NV,
                 developing <span style={{ fontWeight: 600 }}>bold</span> new
                 prototypes and exploring <em>wild &amp; crazy</em> ideas that
                 might just work.
-              </h2>
-              <div className="row" style={{ marginTop: "80px" }}>
+              </h3>
+              <div
+                className="row"
+                style={{ marginTop: "80px", fontFamily: "Merriweather" }}
+              >
                 {features.map((props, idx) => (
                   <Feature key={idx} {...props} />
                 ))}
