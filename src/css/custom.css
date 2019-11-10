@@ -1,34 +1,47 @@
 :root {
-  /* Colors */
   --ifm-color-primary: #0041b1;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
-
-  /* Navbar */
   --ifm-navbar-shadow: none;
   --ifm-navbar-background-color: transparent !important;
   --ifm-navbar-light-scroll-background-color: rgb(255, 255, 255);
   --ifm-navbar-dark-scroll-background-color: rgb(30, 30, 32);
+  --ifm-h3-font-size: 1.5rem;
+  --ifm-heading-line-height: 140%;
+  --ifm-heading-margin-bottom: 0.45rem;
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgb(72, 77, 91);
+  background-color: #484d5b;
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+.theme-dark .menu a,
+.theme-dark .navbar__link:hover {
+  color: #a889ff !important;
+}
+
+.theme-dark header small {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-dark article a,
+.theme-dark header a,
+.theme-dark main a {
+  color: #ffe273 !important;
 }
 
 body {
   padding-top: 0 !important;
 }
 
-p,
-h4 {
-  font-size: 1.1rem;
+main .container {
+  margin-top: 24px;
+}
+
+h4,
+p {
+  font-size: 1.2rem;
 }
 
 header small {
@@ -45,9 +58,9 @@ header h4 {
   line-height: 14px !important;
 }
 
-header > h1,
 article,
-header .header-date {
+header .header-date,
+header > h1 {
   font-family: "Merriweather";
 }
 
@@ -69,13 +82,20 @@ header > h1 {
   background-color: #181820 !important;
 }
 
+.theme-dark .footer.footer--dark {
+  background-color: #040406 !important;
+}
+
 .footer a:hover {
   color: #fff !important;
 }
 
-/* Sidebar Menu */
 .menu {
-  margin-top: 50px;
+  margin-top: 0;
+}
+
+main .menu:not(.menu--show) > .menu__list {
+  margin-top: 62px;
 }
 
 .banner {
@@ -86,7 +106,7 @@ header > h1 {
 }
 
 .heroBanner {
-  background-image: url("../../static/img/run.svg");
+  background-image: url(../../static/img/run.svg);
 }
 
 .theme-dark .heroBanner {
