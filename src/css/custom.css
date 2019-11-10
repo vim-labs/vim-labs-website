@@ -1,6 +1,6 @@
 :root {
   /* Colors */
-  --ifm-color-primary: #256080;
+  --ifm-color-primary: #0041b1;
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -13,9 +13,6 @@
   --ifm-navbar-background-color: transparent !important;
   --ifm-navbar-light-scroll-background-color: rgb(255, 255, 255);
   --ifm-navbar-dark-scroll-background-color: rgb(30, 30, 32);
-
-  /* Footer */
-  --ifm-footer-background-color: #2f3649;
 }
 
 .docusaurus-highlight-code-line {
@@ -29,8 +26,54 @@ body {
   padding-top: 0 !important;
 }
 
-main .container {
-  margin-top: 16px;
+header small {
+  font-size: 1rem !important;
+  color: rgba(0, 0, 0, 0.67);
+}
+
+header .avatar {
+  margin-top: 1rem !important;
+}
+
+header h4 {
+  font-size: 1.25rem !important;
+  line-height: 14px !important;
+}
+
+header > h1,
+article {
+  font-family: "Merriweather";
+}
+
+article {
+  font-size: 21px;
+}
+
+header > h1 {
+  font-size: 2.5rem !important;
+  margin-bottom: 0 !important;
+  line-height: 40px !important;
+}
+
+.footer {
+  padding: 3rem 0;
+}
+
+.footer .footer__links {
+  margin-bottom: 3rem;
+}
+
+.footer.footer--dark {
+  background-color: #202022 !important;
+}
+
+.footer a:hover {
+  color: #fff !important;
+}
+
+/* Sidebar Menu */
+.menu {
+  margin-top: 50px;
 }
 
 .banner {

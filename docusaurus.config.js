@@ -13,6 +13,7 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "facebook", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
+  stylesheets: ["https://fonts.googleapis.com/css?family=Merriweather:300"],
   themeConfig: {
     navbar: {
       logo: {
@@ -20,7 +21,11 @@ module.exports = {
         src: "img/logo.svg"
       },
       links: [
-        { to: "projects/doc1", label: "View Projects", position: "left" },
+        {
+          to: "projects/coming-soon",
+          label: "View Projects",
+          position: "left"
+        },
         { to: "latest", label: "Latest", position: "right" }
       ]
     },
@@ -32,7 +37,7 @@ module.exports = {
           items: [
             {
               label: "Projects",
-              to: "docs/doc1"
+              to: "projects/coming-soon"
             }
           ]
         },
@@ -66,9 +71,6 @@ module.exports = {
     [
       "@docusaurus/preset-classic",
       {
-        docs: {
-          sidebarPath: require.resolve("./sidebars.js")
-        },
         theme: {
           customCss: require.resolve("./src/css/custom.css")
         }
@@ -87,7 +89,8 @@ module.exports = {
       "@docusaurus/plugin-content-docs",
       {
         path: "projects",
-        routeBasePath: "projects"
+        routeBasePath: "projects",
+        sidebarPath: require.resolve("./sidebars.js")
       }
     ]
   ]
