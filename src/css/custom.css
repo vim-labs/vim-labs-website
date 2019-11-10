@@ -51,6 +51,15 @@ header small {
 
 header .avatar {
   margin-top: 1rem !important;
+  margin-left: 2rem !important;
+}
+
+header .avatar a {
+  color: rgba(0, 0, 0, 0.67) !important;
+}
+
+.theme-dark header .avatar a {
+  color: rgba(255, 255, 255, 0.67) !important;
 }
 
 header h4 {
