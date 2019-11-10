@@ -22,7 +22,7 @@ const features = [
     imageUrl: "img/abstract_2.svg",
     description: (
       <>
-        From a humble draft, form begin to take shape as an iterative process
+        From a humble draft, form begins to take shape as an iterative process
         transforms good into great.
       </>
     )
