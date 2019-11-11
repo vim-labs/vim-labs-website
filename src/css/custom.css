@@ -116,11 +116,11 @@ main .menu:not(.menu--show) > .menu__list {
 }
 
 .heroBanner {
-  background-image: url(../../static/img/run.svg);
+  background-image: url(../../static/img/run.png);
 }
 
 .theme-dark .heroBanner {
-  background-image: url(../../static/img/run_dark.svg);
+  background-image: url(../../static/img/run_dark.png);
 }
 
 .navbar .navbar__brand {

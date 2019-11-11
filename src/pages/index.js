@@ -9,7 +9,7 @@ import styles from "./styles.module.css";
 const features = [
   {
     title: <>Ideate</>,
-    imageUrl: "img/abstract_1.svg",
+    imageUrl: "img/abstract_1.png",
     description: (
       <>
         The first sparks emerge from a simple concept, an exciting conversation,
@@ -19,7 +19,7 @@ const features = [
   },
   {
     title: <>Iterate</>,
-    imageUrl: "img/abstract_2.svg",
+    imageUrl: "img/abstract_2.png",
     description: (
       <>
         From a humble draft, form begins to take shape as an iterative process
@@ -29,7 +29,7 @@ const features = [
   },
   {
     title: <>Incubate</>,
-    imageUrl: "img/abstract_3.svg",
+    imageUrl: "img/abstract_3.png",
     description: (
       <>
         Community involvement and collaboration leads to new discoveries and
