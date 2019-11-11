@@ -93,6 +93,6 @@ module.exports = {
         sidebarPath: require.resolve("./sidebars.js")
       }
     ],
-    [require.resolve("./plugins/css-url-loader.js")]
+    [require.resolve("./plugins/css-image-loader.js")]
   ]
 };
