@@ -92,6 +92,7 @@ module.exports = {
         routeBasePath: "projects",
         sidebarPath: require.resolve("./sidebars.js")
       }
-    ]
+    ],
+    [require.resolve("./plugins/css-url-loader.js")]
   ]
 };
