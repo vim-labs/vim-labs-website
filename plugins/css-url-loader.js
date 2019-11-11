@@ -1,14 +1,13 @@
 module.exports = function(context, options) {
   return {
     name: "css-url-loader",
-    configureWebpack(config, isServer) {
+    configureWebpack() {
       return {
-        mode: "development",
+        mode: process.env.NODE_ENV || "development",
         module: {
           rules: [
             {
               test: /\.(gif|png|jpe?g|svg)$/i,
-              exclude: /\.(mdx?)$/i,
               use: ["url-loader"]
             }
           ]
