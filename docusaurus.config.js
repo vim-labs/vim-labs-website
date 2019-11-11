@@ -93,6 +93,6 @@ module.exports = {
         sidebarPath: require.resolve("./sidebars.js")
       }
     ],
-    [require.resolve("./plugins/css-image-loader.js")]
+    ["docusaurus-css-image-loader"]
   ]
 };

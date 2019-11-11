@@ -2972,6 +2972,14 @@ docsearch.js@^2.6.3:
     to-factory "^1.0.0"
     zepto "^1.2.0"
 
+docusaurus-css-image-loader@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/docusaurus-css-image-loader/-/docusaurus-css-image-loader-1.0.0.tgz#bf8ff9ec71830f30cdd8ba9a17da7b8c538e2a1b"
+  integrity sha512-kqBo1eW55GuQWXYk3Sibnns4jDQq1e2IYJ343/sYtWU87SrkNNE8AeCmiyI0c6896pmWeUrYhpPyoF0djQ5etQ==
+  dependencies:
+    file-loader "^4.2.0"
+    url-loader "^2.2.0"
+
 dom-converter@^0.2:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/dom-converter/-/dom-converter-0.2.0.tgz#6721a9daee2e293682955b6afe416771627bb768"
