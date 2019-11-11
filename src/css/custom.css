@@ -17,6 +17,10 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+.theme-dark {
+  background-color: #121214;
+}
+
 .theme-dark .menu a,
 .theme-dark .navbar__link:hover {
   color: #a889ff !important;
