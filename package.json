@@ -10,7 +10,7 @@
     "@docusaurus/core": "next",
     "@docusaurus/preset-classic": "next",
     "classnames": "^2.2.6",
-    "docusaurus-css-image-loader": "^1.0.1",
+    "docusaurus-image-loader": "^1.0.1",
     "has-scroll-hook": "^1.0.3",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
