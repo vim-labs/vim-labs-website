@@ -45,7 +45,7 @@ html[data-page="home"][data-scroll="noScroll"] {
   --ifm-navbar-background-color: transparent;
 }
 
-html[data-page="home"][data-scroll="noScroll"] body {
+html[data-page="home"] body {
   padding-top: 0;
 }
 
