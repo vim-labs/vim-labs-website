@@ -9,7 +9,8 @@ module.exports = {
   title: "Vim Labs",
   tagline: "Share. Learn. Grow.",
   customFields: {
-    description: "Share. Learn. Grow.",
+    description:
+      "We are a design studio / technology laboratory in Las Vegas, NV, developing bold new prototypes and exploring wild & crazy ideas that might just work.",
     logoDark: {
       src: "img/logo_dark.svg"
     }

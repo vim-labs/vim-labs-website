@@ -59,10 +59,7 @@ function Home() {
   const { siteConfig = {} } = context;
 
   return (
-    <Layout
-      title={siteConfig.title}
-      description="Description will go into a meta tag in <head />"
-    >
+    <Layout title={siteConfig.title} description={siteConfig.description}>
       <header className={styles.heroBanner}></header>
       <main>
         {features && features.length && (
