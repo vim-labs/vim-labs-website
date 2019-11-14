@@ -50,9 +50,9 @@ html[data-page="home"][data-scroll="noScroll"] body {
   padding: 0 var(--ifm-pre-padding);
 }
 
+/* Header & Article */
 header,
 article {
-  /* Fonts */
   font-family: Merriweather;
   font-size: 1.15rem;
 }
@@ -66,6 +66,7 @@ header > h1.margin-bottom--sm {
   margin-bottom: 0 !important;
 }
 
+/* Avatar */
 .avatar {
   margin-top: 1rem;
   margin-left: 1.5rem;
