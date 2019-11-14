@@ -40,13 +40,13 @@ html[data-theme="dark"] {
 }
 
 /* Overlay nav on landing when the scrollbar is at the top of the page. */
+html[data-page="home"] body {
+  padding-top: 0;
+}
+
 html[data-page="home"][data-scroll="noScroll"] {
   --ifm-navbar-shadow: none;
   --ifm-navbar-background-color: transparent;
-}
-
-html[data-page="home"] body {
-  padding-top: 0;
 }
 
 /* Header & Article */
