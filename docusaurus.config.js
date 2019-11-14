@@ -7,12 +7,18 @@
 
 module.exports = {
   title: "Vim Labs",
-  tagline: "The tagline of my site",
-  url: "https://your-docusaurus-test-site.com",
+  tagline: "Share. Learn. Grow.",
+  customFields: {
+    description: "Share. Learn. Grow.",
+    logoDark: {
+      src: "img/logo_dark.svg"
+    }
+  },
+  url: "https://vimlabs.com",
   baseUrl: "/",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "vim-labs",
+  projectName: "vim-labs-website",
   stylesheets: ["https://fonts.googleapis.com/css?family=Merriweather:300"],
   themeConfig: {
     navbar: {
@@ -30,7 +36,6 @@ module.exports = {
       ]
     },
     footer: {
-      style: "dark",
       links: [
         {
           title: "Projects",
@@ -93,6 +98,6 @@ module.exports = {
         sidebarPath: require.resolve("./sidebars.js")
       }
     ],
-    ["docusaurus-css-image-loader"]
+    ["docusaurus-image-loader"]
   ]
 };

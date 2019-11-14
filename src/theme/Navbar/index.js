@@ -12,14 +12,14 @@ import Link from "@docusaurus/Link";
 import Head from "@docusaurus/Head";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import { useHasScroll } from "has-scroll-hook";
 
 import SearchBar from "@theme/SearchBar";
 
 import classnames from "classnames";
 
-import useTheme from "@theme/hooks/theme";
+import useTheme from "@theme/hooks/useTheme";
 
-import { useHasScroll } from "has-scroll-hook";
 import styles from "./styles.module.css";
 
 function NavLink(props) {
@@ -54,8 +54,13 @@ function Navbar() {
   const [theme, setTheme] = useTheme();
   const { siteConfig = {} } = context;
   const { baseUrl, themeConfig = {} } = siteConfig;
-  const { navbar = {} } = themeConfig;
+  const { navbar = {}, disableDarkMode = false } = themeConfig;
   const { title, logo = {}, links = [] } = navbar;
+  /* Get boolean scroll offset */
+  const hasScroll = useHasScroll();
+
+  /* Check if we are on the landing page. */
+  const isHome = window.location.pathname === "/";
 
   const showSidebar = useCallback(() => {
     setSidebarShown(true);
@@ -69,27 +74,24 @@ function Navbar() {
     [setTheme]
   );
 
-  const hasScroll = useHasScroll();
+  /* Use a theme-specific logo. */
+  const logoDark = siteConfig.customFields.logoDark.src;
+  const logoUrl = useBaseUrl(theme === "dark" ? logoDark : logo.src);
+
   return (
-    <React.Fragment>
+    <>
       <Head>
-        {/* TODO: Do not assume that it is in english language */}
         <html
           lang="en"
-          data-theme={theme}
-          className={`theme-${theme || "light"}`}
+          data-theme={theme || "light"}
+          data-page={isHome ? "home" : "page"}
+          data-scroll={hasScroll ? "scroll" : "noScroll"}
         />
       </Head>
       <nav
-        className={classnames(
-          "navbar",
-          "navbar--fixed-top",
-          `navbar--${theme || "light"}`,
-          `navbar--${hasScroll ? "hasScroll" : "noScroll"}`,
-          {
-            "navbar-sidebar--show": sidebarShown
-          }
-        )}
+        className={classnames("navbar", "navbar--light", "navbar--fixed-top", {
+          "navbar-sidebar--show": sidebarShown
+        })}
       >
         <div className="navbar__inner">
           <div className="navbar__items">
@@ -121,13 +123,7 @@ function Navbar() {
             </div>
             <Link className="navbar__brand" to={baseUrl}>
               {logo != null && (
-                <img
-                  className="navbar__logo"
-                  src={
-                    theme === "dark" ? "/img/logo_dark.svg" : "/img/logo.svg"
-                  }
-                  alt={logo.alt}
-                />
+                <img className="navbar__logo" src={logoUrl} alt={logo.alt} />
               )}
               {title != null && (
                 <strong
@@ -149,16 +145,18 @@ function Navbar() {
               .map((linkItem, i) => (
                 <NavLink {...linkItem} key={i} />
               ))}
-            <Toggle
-              className={styles.displayOnlyInLargeViewport}
-              aria-label="Dark mode toggle"
-              checked={theme === "dark"}
-              onChange={onToggleChange}
-              icons={{
-                checked: <Moon />,
-                unchecked: <Sun />
-              }}
-            />
+            {!disableDarkMode && (
+              <Toggle
+                className={styles.displayOnlyInLargeViewport}
+                aria-label="Dark mode toggle"
+                checked={theme === "dark"}
+                onChange={onToggleChange}
+                icons={{
+                  checked: <Moon />,
+                  unchecked: <Sun />
+                }}
+              />
+            )}
             <SearchBar
               handleSearchBarToggle={setIsSearchBarExpanded}
               isSearchBarExpanded={isSearchBarExpanded}
@@ -176,17 +174,11 @@ function Navbar() {
           <div className="navbar-sidebar__brand">
             <Link className="navbar__brand" onClick={hideSidebar} to={baseUrl}>
               {logo != null && (
-                <img
-                  className="navbar__logo"
-                  src={
-                    theme === "dark" ? "/img/logo_dark.svg" : "/img/logo.svg"
-                  }
-                  alt={logo.alt}
-                />
+                <img className="navbar__logo" src={logoUrl} alt={logo.alt} />
               )}
               {title != null && <strong>{title}</strong>}
             </Link>
-            {sidebarShown && (
+            {!disableDarkMode && sidebarShown && (
               <Toggle
                 aria-label="Dark mode toggle in sidebar"
                 checked={theme === "dark"}
@@ -215,7 +207,7 @@ function Navbar() {
           </div>
         </div>
       </nav>
-    </React.Fragment>
+    </>
   );
 }
 

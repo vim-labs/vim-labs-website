@@ -1,14 +1,16 @@
 {
-  "name": "vim-labs",
-  "version": "1.0.0",
+  "name": "vim-labs-website",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "start": "docusaurus start",
-    "build": "docusaurus build"
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy"
   },
   "dependencies": {
-    "@docusaurus/core": "next",
-    "@docusaurus/preset-classic": "next",
+    "@docusaurus/core": "^2.0.0-alpha.34",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.34",
     "classnames": "^2.2.6",
     "docusaurus-image-loader": "^1.0.1",
     "has-scroll-hook": "^1.0.3",

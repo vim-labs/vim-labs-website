@@ -1,7 +1,6 @@
 import React from "react";
 import classnames from "classnames";
 import Layout from "@theme/Layout";
-import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
@@ -63,7 +62,7 @@ function Home() {
       title={siteConfig.title}
       description="Description will go into a meta tag in <head />"
     >
-      <header className="banner heroBanner"></header>
+      <header className={styles.heroBanner}></header>
       <main>
         {features && features.length && (
           <section className={styles.features}>

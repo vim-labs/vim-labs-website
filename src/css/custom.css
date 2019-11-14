@@ -1,132 +1,51 @@
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #0041b1;
+  /* Palette */
+  --ifm-color-primary: rgb(0, 65, 177);
+
+  /* Navbar */
+  --ifm-navbar-background-color: rgb(255, 255, 255);
+  --ifm-navbar-sidebar-background-color: rgb(255, 255, 255);
+
+  /* Footer */
+  --ifm-footer-background-color: rgb(28, 28, 30);
+  --ifm-footer-title-color: rgb(250, 250, 252);
+  --ifm-footer-link-color: rgb(180, 180, 182);
+}
+
+/* Dark theme overrides */
+html[data-theme="dark"] {
+  --ifm-color-primary: rgb(255, 226, 115);
+  --ifm-navbar-background-color: rgb(40, 40, 42);
+  --ifm-navbar-sidebar-background-color: rgb(40, 40, 42);
+}
+
+html[data-page="home"][data-scroll="noScroll"] {
+  /* Overlay nav on landing when the scrollbar is at the top of the page. */
   --ifm-navbar-shadow: none;
-  --ifm-navbar-background-color: transparent !important;
-  --ifm-navbar-light-scroll-background-color: rgb(255, 255, 255);
-  --ifm-navbar-dark-scroll-background-color: rgb(30, 30, 32);
-  --ifm-h2-font-size: 1.4rem;
-  --ifm-h3-font-size: 1.3rem;
-  --ifm-heading-line-height: 140%;
-  --ifm-heading-margin-bottom: 0.45rem;
+  --ifm-navbar-background-color: transparent;
+}
+
+html[data-page="home"][data-scroll="noScroll"] body {
+  padding-top: 0;
 }
 
 .docusaurus-highlight-code-line {
-  background-color: #484d5b;
+  background-color: rgb(72, 77, 91);
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
-}
-
-.theme-dark {
-  background-color: #121214;
-}
-
-.theme-dark .menu a,
-.theme-dark .navbar__link:hover {
-  color: #a889ff !important;
-}
-
-.theme-dark header small {
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-
-.theme-dark article a,
-.theme-dark header a,
-.theme-dark main a {
-  color: #ffe273 !important;
-}
-
-body {
-  padding-top: 0 !important;
-}
-
-main .container {
-  margin-top: 24px;
-}
-
-h4,
-p {
-  font-size: 1.1em;
-}
-
-header small {
-  font-size: 1rem !important;
-  color: rgba(0, 0, 0, 0.67);
-}
-
-header .avatar {
-  margin-top: 1rem !important;
-  margin-left: 2rem !important;
-}
-
-header .avatar a {
-  color: rgba(0, 0, 0, 0.67) !important;
-}
-
-.theme-dark header .avatar a {
-  color: rgba(255, 255, 255, 0.67) !important;
-}
-
-header h4 {
-  font-size: 1.25rem !important;
-  line-height: 14px !important;
-}
-
-article,
-header .header-date,
-header > h1 {
-  font-family: "Merriweather";
-}
-
-header > h1 {
-  font-size: 2.3rem !important;
-  margin-bottom: 0.5rem !important;
-  line-height: 40px !important;
-}
-
-.footer {
-  padding: 3rem 0;
-}
-
-.footer .footer__links {
-  margin-bottom: 3rem;
-}
-
-.footer.footer--dark {
-  background-color: #181820 !important;
-}
-
-.theme-dark .footer.footer--dark {
-  background-color: #040406 !important;
-}
-
-.footer a:hover {
-  color: #fff !important;
-}
-
-.menu {
-  margin-top: 0;
-}
-
-main .menu:not(.menu--show) > .menu__list {
-  margin-top: 62px;
-}
-
-.banner {
-  background-size: cover;
-  background-position: center top;
-  padding-top: 48%;
-  width: 100%;
-}
-
-.heroBanner {
-  background-image: url(../../static/img/run.png);
-}
-
-.theme-dark .heroBanner {
-  background-image: url(../../static/img/run_dark.png);
-}
-
-.navbar .navbar__brand {
-  height: 2.75rem;
 }

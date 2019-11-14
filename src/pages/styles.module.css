@@ -1,7 +1,24 @@
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding-top: 48%;
+  background-image: url(../../static/img/run.png);
+  background-size: cover;
+  background-position: center;
+}
+
+html[data-theme="dark"] .heroBanner {
+  background-image: url(../../static/img/run_dark.png);
 }
 
 .buttons {
