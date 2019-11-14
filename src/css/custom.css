@@ -16,6 +16,12 @@
   /* Palette */
   --ifm-color-primary: rgb(0, 65, 177);
 
+  /* Fonts */
+  --ifm-font-size-base: 1rem;
+  --ifm-line-height-base: 1.6;
+  --ifm-heading-line-height: 1.4;
+  --ifm-heading-margin-bottom: 0.25rem;
+
   /* Navbar */
   --ifm-navbar-background-color: rgb(255, 255, 255);
   --ifm-navbar-sidebar-background-color: rgb(255, 255, 255);
