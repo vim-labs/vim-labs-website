@@ -49,3 +49,29 @@ html[data-page="home"][data-scroll="noScroll"] body {
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+header,
+article {
+  /* Fonts */
+  font-family: Merriweather;
+  font-size: 1.15rem;
+}
+
+header > h1 {
+  line-height: 100%;
+  font-size: 2.75rem !important;
+}
+
+header > h1.margin-bottom--sm {
+  margin-bottom: 0 !important;
+}
+
+.avatar {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+
+.avatar__intro {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
