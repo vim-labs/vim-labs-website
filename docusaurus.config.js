@@ -32,7 +32,7 @@ module.exports = {
           label: "View Projects",
           position: "left"
         },
-        { to: "latest", label: "Latest", position: "right" }
+        { to: "latest/", label: "Latest", position: "right" }
       ]
     },
     footer: {
