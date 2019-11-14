@@ -27,10 +27,12 @@ html[data-theme="dark"] {
 
 /* Overlay nav on landing when the scrollbar is at the top of the page. */
 html[data-page="home"] body {
+  /* Side effect: The nav contents overlap the hero image. */
   padding-top: 0;
 }
 
 html[data-page="home"][data-scroll="noScroll"] {
+  /* Use a transparent navbar when at the top of the landing page. */
   --ifm-navbar-shadow: none;
   --ifm-navbar-background-color: transparent;
 }
@@ -38,26 +40,31 @@ html[data-page="home"][data-scroll="noScroll"] {
 /* Header & Article */
 header,
 article {
+  /* Use a serif font for the date and article content. */
   font-family: Merriweather;
   font-size: 1.15rem;
 }
 
 header > h1 {
+  /* Article title font style */
   line-height: 100%;
-  font-size: 2.75rem !important;
+  font-size: 2.5rem !important;
 }
 
 header > h1.margin-bottom--sm {
+  /* Remove the space between the article title and its post date. */
   margin-bottom: 0 !important;
 }
 
 /* Avatar */
 .avatar {
+  /* Indent the avatar, along with the author's name and title. */
   margin-top: 1rem;
   margin-left: 1.5rem;
 }
 
 .avatar__intro {
+  /* Use a sans-serif font for the author's meta data. */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
