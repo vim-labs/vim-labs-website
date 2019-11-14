@@ -33,21 +33,14 @@ html[data-theme="dark"] {
   --ifm-navbar-sidebar-background-color: rgb(40, 40, 42);
 }
 
+/* Overlay nav on landing when the scrollbar is at the top of the page. */
 html[data-page="home"][data-scroll="noScroll"] {
-  /* Overlay nav on landing when the scrollbar is at the top of the page. */
   --ifm-navbar-shadow: none;
   --ifm-navbar-background-color: transparent;
 }
 
 html[data-page="home"][data-scroll="noScroll"] body {
   padding-top: 0;
-}
-
-.docusaurus-highlight-code-line {
-  background-color: rgb(72, 77, 91);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
 }
 
 /* Header & Article */
