@@ -49,10 +49,11 @@ function Navbar() {
   const { baseUrl, themeConfig = {} } = siteConfig;
   const { navbar = {}, disableDarkMode = false } = themeConfig;
   const { title, logo = {}, links = [] } = navbar;
-  /* Get boolean scroll offset */
+
+  /* Get the vertical scrollbar offset as a boolean value. */
   const hasScroll = useHasScroll();
 
-  /* Check if we are visiting the landing page from a web browser. */
+  /* Set an isHome flag if we are visiting the landing page from a web browser. */
   let isHome = false;
   if (typeof window !== "undefined") {
     isHome = window.location.pathname === "/";
