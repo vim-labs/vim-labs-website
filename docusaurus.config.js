@@ -21,7 +21,7 @@ module.exports = {
   },
   url: "https://vimlabs.com",
   baseUrl: "/",
-  favicon: "img/favicon.ico",
+  favicon: "/favicon.ico",
   organizationName: "vim-labs",
   projectName: "vim-labs-website",
   stylesheets: ["https://fonts.googleapis.com/css?family=Merriweather"],
