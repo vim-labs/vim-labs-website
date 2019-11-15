@@ -20,7 +20,7 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "vim-labs",
   projectName: "vim-labs-website",
-  stylesheets: ["https://fonts.googleapis.com/css?family=Merriweather:300"],
+  stylesheets: ["https://fonts.googleapis.com/css?family=Merriweather"],
   themeConfig: {
     navbar: {
       logo: {

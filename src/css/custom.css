@@ -5,7 +5,7 @@
   /* Fonts */
   --ifm-font-size-base: 1rem;
   --ifm-line-height-base: 1.6;
-  --ifm-heading-line-height: 1.4;
+  --ifm-heading-line-height: 1.45;
   --ifm-heading-margin-bottom: 0.25rem;
 
   /* Navbar */
@@ -42,7 +42,7 @@ header,
 article {
   /* Use a serif font for the date and article content. */
   font-family: Merriweather;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
 }
 
 header > h1 {
@@ -56,11 +56,19 @@ header > h1.margin-bottom--sm {
   margin-bottom: 0 !important;
 }
 
+header small {
+  font-size: 1rem;
+}
+
 /* Avatar */
 .avatar {
   /* Indent the avatar, along with the author's name and title. */
   margin-top: 1rem;
   margin-left: 1.5rem;
+}
+
+.avatar .avatar__subtitle {
+  margin-top: 0;
 }
 
 .avatar__intro {
