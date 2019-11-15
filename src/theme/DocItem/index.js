@@ -1,18 +1,9 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 import React from "react";
-
 import Head from "@docusaurus/Head";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import DocPaginator from "@theme/DocPaginator";
 import useTOCHighlight from "@theme/hooks/useTOCHighlight";
-
 import styles from "./styles.module.css";
 
 const LINK_CLASS_NAME = "contents__link";
@@ -46,6 +37,7 @@ function Headings({ headings, isChild }) {
   );
 }
 
+// Render a single document item.
 function DocItem(props) {
   const { siteConfig = {} } = useDocusaurusContext();
   const { url: siteUrl } = siteConfig;

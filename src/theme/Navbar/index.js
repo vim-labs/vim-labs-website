@@ -1,18 +1,13 @@
 import React, { useCallback, useState } from "react";
 import Toggle from "react-toggle";
-
 import Link from "@docusaurus/Link";
 import Head from "@docusaurus/Head";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import { useHasScroll } from "has-scroll-hook";
-
 import SearchBar from "@theme/SearchBar";
-
 import classnames from "classnames";
-
 import useTheme from "@theme/hooks/useTheme";
-
 import styles from "./styles.module.css";
 
 function NavLink(props) {
