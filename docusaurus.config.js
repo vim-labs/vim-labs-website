@@ -13,6 +13,10 @@ module.exports = {
       "We are a design studio / technology laboratory in Las Vegas, NV, developing bold new prototypes and exploring wild & crazy ideas that might just work.",
     logoDark: {
       src: "img/logo_dark.svg"
+    },
+    blog: {
+      title: "Latest",
+      description: "The latest news from Vim Labs."
     }
   },
   url: "https://vimlabs.com",
