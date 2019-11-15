@@ -9,6 +9,14 @@ module.exports = {
   title: "Vim Labs",
   tagline: "Share. Learn. Grow.",
   customFields: {
+    authors: {
+      iRyanBell: {
+        avatarUrl:
+          "https://avatars0.githubusercontent.com/u/25379378?s=460&v=4",
+        title: "Director of Creative Energy",
+        url: "https://twitter.com/iRyanBell"
+      }
+    },
     description:
       "We are a design studio / technology laboratory in Las Vegas, NV, developing bold new prototypes and exploring wild & crazy ideas that might just work.",
     logoDark: {
