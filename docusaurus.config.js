@@ -26,6 +26,7 @@ module.exports = {
   projectName: "vim-labs-website",
   stylesheets: ["https://fonts.googleapis.com/css?family=Merriweather"],
   themeConfig: {
+    image: "img/run.png",
     navbar: {
       logo: {
         alt: "Vim Labs Logo",
