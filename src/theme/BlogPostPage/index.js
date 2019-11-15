@@ -20,7 +20,7 @@ function BlogPostPage(props) {
     <Layout
       title={`${siteConfig.title} | ${metadata.title}`}
       description={metadata.description}
-      image={metadata.featuredImage}
+      image={frontMatter.featuredImage}
     >
       {BlogPostContents && (
         <div className="container margin-vert--xl">
