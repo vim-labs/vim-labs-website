@@ -52,8 +52,11 @@ function Navbar() {
   /* Get boolean scroll offset */
   const hasScroll = useHasScroll();
 
-  /* Check if we are on the landing page. */
-  const isHome = window.location.pathname === "/";
+  /* Check if we are visiting the landing page from a web browser. */
+  let isHome = false;
+  if (typeof window !== "undefined") {
+    isHome = window.location.pathname === "/";
+  }
 
   const showSidebar = useCallback(() => {
     setSidebarShown(true);
