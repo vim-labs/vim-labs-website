@@ -59,7 +59,10 @@ function Home() {
   const { siteConfig = {} } = context;
 
   return (
-    <Layout title={siteConfig.title} description={siteConfig.description}>
+    <Layout
+      title={siteConfig.title}
+      description={siteConfig.customFields.description}
+    >
       <header className={styles.heroBanner}></header>
       <main>
         {features && features.length && (
