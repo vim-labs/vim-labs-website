@@ -16,7 +16,7 @@ module.exports = {
       src: "img/logo_dark.svg"
     },
     blog: {
-      title: "Latest",
+      title: "Latest News",
       description: "The latest news from Vim Labs."
     }
   },
@@ -39,7 +39,7 @@ module.exports = {
           label: "View Projects",
           position: "left"
         },
-        { to: "latest/", label: "Latest", position: "right" }
+        { to: "latest/", label: "Latest News", position: "right" }
       ]
     },
     footer: {
