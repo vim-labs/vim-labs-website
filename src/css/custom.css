@@ -17,6 +17,10 @@
   --ifm-footer-title-color: rgb(250, 250, 252);
   --ifm-footer-link-color: rgb(180, 180, 182);
   --ifm-footer-link-hover-color: rgb(255, 255, 255);
+
+  /* Markdown */
+
+  --ifm-leading: 1.2rem;
 }
 
 /* Dark theme overrides */
