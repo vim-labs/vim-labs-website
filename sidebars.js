@@ -1,5 +1,5 @@
 module.exports = {
   docs: {
-    "In Development": ["convvo"]
+    Burni: ["burni_overview"]
   }
 };

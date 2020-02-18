@@ -35,7 +35,7 @@ module.exports = {
       },
       links: [
         {
-          to: "projects/convvo",
+          to: "projects/burni_overview",
           label: "View Projects",
           position: "left"
         },
@@ -49,7 +49,7 @@ module.exports = {
           items: [
             {
               label: "Projects",
-              to: "projects/convvo"
+              to: "projects/burni_overview"
             }
           ]
         },

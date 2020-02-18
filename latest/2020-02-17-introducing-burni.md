@@ -22,7 +22,7 @@ Most of the blockchain-based digital collectibles have a valuation based on thei
 
 Burni was created to inherit a valuation via proof-of-burn (_see proof-of-burn: https://en.bitcoin.it/wiki/Proof_of_burn_).
 
-> The way it works, is fungible ERC-20 tokens are destroyed, or burnt up in the forging of new ERC-721 non-fungible tokens. Each token can set an IPFS content identifier multihash a single time, connecting the token to real-world assets and peer-to-peer distributed content. (see: Why IPFS?: https://youtu.be/zE_WSLbqqvo)\*
+> The way it works, is fungible ERC-20 tokens are destroyed, or burnt up in the forging of new ERC-721 non-fungible tokens. Each token can set an IPFS content identifier multihash a single time, connecting the token to real-world assets and peer-to-peer distributed content. (see: Why IPFS?: https://youtu.be/zE_WSLbqqvo)
 
 A distributed pseudorandom genesis hash is calculated as:
 
