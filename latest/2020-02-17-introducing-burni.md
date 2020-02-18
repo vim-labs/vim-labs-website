@@ -37,7 +37,7 @@ The genesis hash in combination with the underlying CID multihash, and the delay
 
 Running a genesis hash as a latent space seed through a GAN results in a unique photo-realistic image bound to the token. This never-before-seen cat is the result of one such token:
 
-![NFT GAN Cat](https://vimlabs.com/img/article_assets/2020-02-17-introducing-burni-gan-cat.png)
+![NFT GAN Cat](https://vimlabs.com/img/article_assets/2020-02-17-introducing-burni-gan_cat.png)
 
 As the base token used to mint the collectibles is "used up" during the minting process, there's a deflationary process akin to a virtual resource being consumed in the creation of new materials. The NFTs have a getValuation() function to find the amount of Burni used to create the NFT.
 

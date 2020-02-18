@@ -6,7 +6,7 @@ sidebar_label: Overview
 
 Available on Uniswap: https://uniswap.io
 
-![Burni Logo](https://vimlabs.com/img/article_assets/burni_logo.png)
+![Burni Logo](https://vimlabs.com/img/article_assets/burni_overview-logo.png
 
 # How it works
 
