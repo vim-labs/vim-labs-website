@@ -35,7 +35,7 @@ module.exports = {
       },
       links: [
         {
-          to: "projects/coming-soon",
+          to: "projects/convvo",
           label: "View Projects",
           position: "left"
         },
@@ -49,7 +49,7 @@ module.exports = {
           items: [
             {
               label: "Projects",
-              to: "projects/coming-soon"
+              to: "projects/convvo"
             }
           ]
         },

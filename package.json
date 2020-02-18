@@ -9,13 +9,14 @@
     "deploy": "docusaurus deploy"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.35",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.35",
-    "classnames": "^2.2.6",
-    "docusaurus-image-loader": "^1.0.1",
-    "has-scroll-hook": "^1.0.3",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "@docusaurus/core": "2.0.0-alpha.41",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.41",
+    "@docusaurus/utils": "^2.0.0-alpha.41",
+    "classnames": "latest",
+    "docusaurus-image-loader": "latest",
+    "has-scroll-hook": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   },
   "browserslist": {
     "production": [
