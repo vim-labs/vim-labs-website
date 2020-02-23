@@ -6,7 +6,7 @@
  */
 
 import React from "react";
-
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import BlogPostItem from "@theme/BlogPostItem";
 import BlogPostPaginator from "@theme/BlogPostPaginator";
@@ -14,6 +14,7 @@ import BlogPostPaginator from "@theme/BlogPostPaginator";
 function BlogPostPage(props) {
   const { content: BlogPostContents } = props;
   const { frontMatter, metadata } = BlogPostContents;
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`${siteConfig.title} | ${metadata.title}`}

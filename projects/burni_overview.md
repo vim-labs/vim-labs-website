@@ -6,7 +6,7 @@ sidebar_label: Overview
 
 Available on Uniswap: https://uniswap.io
 
-<img src="https://vimlabs.com/img/article_assets/burni_overview-header.png" alt="Burni" width="1280" height="587" />
+<img src="https://vimlabs.com/img/article_assets/burni_overview-header.png" alt="Burni" width="1280" height="588" style="width:640px;height:294px" />
 
 # How it works
 
