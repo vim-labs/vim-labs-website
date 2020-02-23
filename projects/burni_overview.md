@@ -18,7 +18,7 @@ This makes Burni a deflationary cryptocurrency with unique cryptoeconomic proper
 
 The total Burni sent to the Burnin smart contract is used to forge a single token. Since multiple coins cannot be forged simultaneously, Ether is infused into the cost of production.
 
-An immutable content identifier multihash can be set a single time for a token, wrapping the underlying asset, collectable, or artwork inside the token. Post-minting, the following 5 block hashes are concatenated with a prefix and token ID to create a pseudorandom genesis hash for use in collectible attribute definitions.
+An immutable content identifier multihash can be set a single time for a token, wrapping the underlying asset, collectible, or artwork inside the token. Post-minting, the following 5 block hashes are concatenated with a prefix and token ID to create a pseudorandom genesis hash for use in collectible attribute definitions.
 
 # Ready to get started?
 
